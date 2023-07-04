@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 100px;
+    font-family: "Varela Round", sans-serif;
+    background: #75018099;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 4px  purple;
+}
+
+.cont {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.cont > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #80008036;
+    padding: 20px 20px 30px 20px;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.cont > div + p {
+    grid-row: 2;
+    color: #800080b2;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.cont > div + p span {
+    color: rgba(255, 255, 255, 0.603);
+    text-shadow: 1px 2px 2px purple;
+}
+
+.cont  h2 {
+    color: #ffffff66;
+    text-shadow: 2px 3px 2px purple;
+    font-size: 40px;
+}
+
+.cont button {
+    background-color: transparent;
+    font-family: "Varela Round", sans-serif;
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 8px;
+    border: none;
+    background: #ffffff36;
+    box-shadow: 0 5px 5px 1px rgba(94, 9, 94, 0.301);
+    font-size: 16px;
+    color: #49045e;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgb(73, 4, 94);
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.play {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.cont button:hover {
+    background-color: #ffffff4f;
+    transform: scale(1.02);
+}
+
+.cont > div div {
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 5px 10px purple, inset 2px 2px 3px #ffffff4d ;
+    margin-bottom: 30px;
+}
+
+.rolling {
+    animation: 500ms roll;
+}
+
+.cont div > span {
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 4px purple;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate3d(0, 1, 0.5, 50rad);
+    }
+
+    100% {
+        transform: rotate3d(0);
+    }
+}
+
+dialog {
+    width: 20%;
+    padding: 20px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 250px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(#ffffff1a, #ffffff2f);
+    box-shadow: 2px 5px 20px #49045eb0;
+}
+
+dialog h3 {
+    font-size: 40px;
+    color: #5d0677;
+    text-shadow: 0 0 8px #f5a4f5;
+    text-transform: uppercase;
+}
+
+dialog button {
+    background-color: transparent;
+    border: none;
+    height: 60px;
+    overflow: hidden;
+    padding: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #5d0677;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+dialog::backdrop {
+    background-color: rgb(102, 0, 128);
+    opacity: 0.4;
+    font-family: "Varela Round", sans-serif;
+}
+
+dialog button:focus {
+    outline: none;
+}
+
+dialog button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
