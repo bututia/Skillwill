@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+ }
+
+ #open-btn {
+     margin: 5px;
+ }
+ 
+ #open-btn, #close-btn {
+     padding: 5px 10px;
+     border-radius: 5px;
+     border: 1px solid gray;
+     box-shadow: 0 1px 5px 2px rgba(128, 128, 128, 0.37);
+     cursor: pointer;
+ }
+
+ #close-btn {
+     width: fit-content;
+ }
+
+ #open-btn:hover, #close-btn:hover{
+     transform: scale(1.05);
+ }
+
+ dialog {
+     flex-direction: column;
+     align-items: center;
+     border: none;
+     border-radius: 8px;
+     gap: 10px;
+     box-shadow: 0 5px 15px 5px rgba(128, 128, 128, 0.493);
+     margin-top: 20px;
+     background-color: #dedede
+ }
+
+ dialog::backdrop {
+     background-color: black;
+     opacity: 0.3;
+ }
