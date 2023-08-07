@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(37, 1, 1);
+}
+
+.container {
+  color: rgba(255, 0, 0, 0.8);
+  background-color: black;
+  min-height: 400px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 5px 5px 20px 12px #0000004d;
+  border-radius: 20px;
+  display: flex;
+}
+
+.poster {
+    width: 25%;
+    display: grid;
+    justify-content: center;
+}
+
+
+.bookInfo {
+  padding-left: 50px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bookInfo h1 {
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.bookInfo p {
+  font-family: sans-serif;
+  margin-bottom: 40px;
+  text-indent: 10px;
+  line-height: 22px;
+  color: #ffffffcc;
+}
+
+.bookInfo div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5px;
+  font-family: sans-serif;
+}
+
+.bookInfo h3 {
+  margin-bottom: 10px;
+}
+
+.bookInfo div span {
+  color: #ffffffcc;
+  padding: 3px 5px;
+  font-style: italic;
+  background-color: rgba(206, 62, 62, 0.2);
+  border-radius: 5px;
+}
