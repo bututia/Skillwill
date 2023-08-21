@@ -79,7 +79,7 @@ useEffect(() => {
 }, [])
 
 useEffect(() => {
-    if(width < 576){
+    if(width <= 480){
         lightMode()
         themeDiv.current.style.pointerEvents = "none"
     }else{
