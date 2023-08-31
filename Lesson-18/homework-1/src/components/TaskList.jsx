@@ -12,8 +12,8 @@ const TaskList = () => {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${API_KEY}`
                 },
-                body: JSON.stringify([{name, task, isCompleted : true}])
-            }).then(res => {
+            body: JSON.stringify([{name, task, isCompleted : true}])
+            }).then((res) => {
                 if(!res.ok) throw new Error("Response Failed")
                 return res.json()
             }).then(data => setTasks((prev) => [{name : data.items[0].name, task: data.items[0].task}, ...prev]))
