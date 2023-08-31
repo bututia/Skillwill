@@ -27,7 +27,7 @@ const TaskList = () => {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${API_KEY}`
                 },
-            }).then(res => {
+            }).then((res) => {
                 if(!res.ok) throw new Error("Response Failed")
                 return res.json()
             }).then(data => setTasks(data.items.map(i => {
