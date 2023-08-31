@@ -22,7 +22,7 @@ const TaskList = () => {
 
     useEffect(() => {
         fetch("/api/v1/todo", {
-            method: "Get",
+            method: "GET",
             headers: {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${API_KEY}`
